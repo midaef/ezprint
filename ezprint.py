@@ -18,3 +18,9 @@ def pvd(s = ''):
 
 def cls():
 	os.system('cls')
+
+
+
+def pvi(s, width = 50):
+	otstup = (width - len(s)) // 2
+	return(otstup * ' ' + s)
