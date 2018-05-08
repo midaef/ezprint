@@ -8,12 +8,12 @@ def p(value = ''):
 	print(value)
 
 
-def pvd(s = ''):
+def pwd(s = '', t = 0.01):
 	strtoprint = ''
 	for i in s:
 		strtoprint = strtoprint + str(i)
 		sys.stdout.write('\r\r' + (strtoprint) + '')
-		time.sleep(0.01)
+		time.sleep(t)
 
 
 def cls():
@@ -21,6 +21,6 @@ def cls():
 
 
 
-def pvi(s, width = 50):
+def pwi(s, width = 50):
 	otstup = (width - len(s)) // 2
 	return(otstup * ' ' + s)
